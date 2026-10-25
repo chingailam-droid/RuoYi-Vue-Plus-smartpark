@@ -9,7 +9,6 @@ services:
       TZ: Asia/Shanghai
       DBCA_TOTAL_MEMORY: 16192
     ports:
-      - "18080:8080"
       - "1521:1521"
     volumes:
       # 数据挂载

@@ -3036,7 +3036,7 @@ EXEC sp_addextendedproperty
     'TABLE', N'sys_oss_config'
 GO
 
-INSERT INTO sys_oss_config VALUES (1761900000000000001, N'minio', N'ruoyi', N'ruoyi123', N'ruoyi', N'', N'127.0.0.1:9000', N'', N'N', N'', N'1', N'Y', N'', 1761000000000000103, 1761100000000000001, getdate(), 1761100000000000001, getdate(), NULL);
+INSERT INTO sys_oss_config VALUES (1761900000000000001, N'minio', N'ruoyi', N'ruoyi123', N'smartpark', N'', N'127.0.0.1:9000', N'', N'N', N'', N'1', N'Y', N'', 1761000000000000103, 1761100000000000001, getdate(), 1761100000000000001, getdate(), NULL);
 GO
 INSERT INTO sys_oss_config VALUES (1761900000000000002, N'qiniu', N'XXXXXXXXXXXXXXXX', N'XXXXXXXXXXXXXXX', N'ruoyi', N'', N's3-cn-north-1.qiniucs.com', N'', N'N', N'', N'1', N'N', N'', 1761000000000000103, 1761100000000000001, getdate(), 1761100000000000001, getdate(), NULL);
 GO
@@ -3044,7 +3044,7 @@ INSERT INTO sys_oss_config VALUES (1761900000000000003, N'aliyun', N'XXXXXXXXXXX
 GO
 INSERT INTO sys_oss_config VALUES (1761900000000000004, N'qcloud', N'XXXXXXXXXXXXXXX', N'XXXXXXXXXXXXXXX', N'ruoyi-1250000000', N'', N'cos.ap-beijing.myqcloud.com', N'', N'N', N'ap-beijing', N'1', N'N', N'', 1761000000000000103, 1761100000000000001, getdate(), 1761100000000000001, getdate(), NULL);
 GO
-INSERT INTO sys_oss_config VALUES (1761900000000000005, N'image', N'ruoyi', N'ruoyi123', N'ruoyi', N'image', N'127.0.0.1:9000', N'', N'N', N'', N'1', N'N', N'', 1761000000000000103, 1761100000000000001, getdate(), 1761100000000000001, getdate(), NULL);
+INSERT INTO sys_oss_config VALUES (1761900000000000005, N'image', N'ruoyi', N'ruoyi123', N'smartpark', N'image', N'127.0.0.1:9000', N'', N'N', N'', N'1', N'N', N'', 1761000000000000103, 1761100000000000001, getdate(), 1761100000000000001, getdate(), NULL);
 GO
 
 

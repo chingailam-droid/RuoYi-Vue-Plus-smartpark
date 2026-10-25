@@ -1,0 +1,32 @@
+# 复制为 application-smartpark.yml 后激活：--spring.profiles.active=dev,smartpark
+# 后激活的 profile 覆盖端口、数据源和 Redis。口令只使用环境变量。
+
+server:
+  port: 18200
+
+--- # 数据源
+spring:
+  datasource:
+    dynamic:
+      datasource:
+        master:
+          url: jdbc:mysql://114.67.125.174:13629/ry-smartpark?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8&autoReconnect=true&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true&nullCatalogMeansCurrent=true
+          username: ${MYSQL_USERNAME}
+          password: ${MYSQL_PASSWORD}
+
+--- # redis
+spring.data:
+  redis:
+    host: 114.67.125.174
+    port: 13379
+    database: 11
+    password: ${REDIS_PASSWORD}
+    timeout: 10s
+    ssl.enabled: false
+
+# MinIO 写入 sys_oss_config（config_key=minio，status=Y）。
+# endpoint: 114.67.125.174:13090
+# bucket_name: smartpark
+# access_key: ${MINIO_ACCESS_KEY}
+# secret_key: ${MINIO_SECRET_KEY}
+# is_https: N
