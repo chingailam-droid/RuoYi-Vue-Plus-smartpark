@@ -26,8 +26,8 @@ snail-job:
     port: 17888
   # 命名空间UUID 详见 script/sql/ry_job.sql `sj_namespace`表`unique_id`字段
   namespace: ${spring.profiles.active}
-  # 随主应用端口漂移
-  port: 2${server.port}
+  # 客户端端口。不随服务端口拼接，避免超出合法端口范围
+  port: 28180
   # 客户端ip指定
   host:
 
@@ -46,7 +46,7 @@ snail-ai:
   app-id: 1
   # 认证令牌（在 Server「应用管理」页面创建时自动生成）
   token: SAI_566a6bfbc26e4998b4841cc927d50c5d
-  port: 3${server.port}
+  port: 38180
   # Skill 文件临时目录
   skill-temp-dir: /tmp/snail-ai-agent/skills
   # ==================== Chat 嵌入模式配置 ====================

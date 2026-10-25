@@ -102,9 +102,9 @@ services:
     environment:
       # 时区上海
       TZ: Asia/Shanghai
-      SERVER_PORT: 8082
-      SNAIL_JOB_PORT: 28082
-      SNAIL_AI_PORT: 38082
+      SERVER_PORT: 18080
+      SNAIL_JOB_PORT: 28180
+      SNAIL_AI_PORT: 38180
     volumes:
       # 配置文件
       - /docker/server1/logs/:/ruoyi/server/logs/
@@ -119,9 +119,9 @@ services:
     environment:
       # 时区上海
       TZ: Asia/Shanghai
-      SERVER_PORT: 8081
-      SNAIL_JOB_PORT: 28081
-      SNAIL_AI_PORT: 38081
+      SERVER_PORT: 18081
+      SNAIL_JOB_PORT: 28181
+      SNAIL_AI_PORT: 38181
     volumes:
       # 配置文件
       - /docker/server2/logs/:/ruoyi/server/logs/

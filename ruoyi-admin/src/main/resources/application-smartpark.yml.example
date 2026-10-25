@@ -2,7 +2,7 @@
 # 后激活的 profile 覆盖端口、数据源和 Redis。口令只使用环境变量。
 
 server:
-  port: 8081
+  port: 18080
 
 --- # 数据源
 spring:
