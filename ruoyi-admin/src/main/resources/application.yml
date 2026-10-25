@@ -1,7 +1,7 @@
 # 开发环境配置
 server:
-  # 服务器的HTTP端口。园区后端使用 18080
-  port: 18080
+  # 服务器的HTTP端口。园区后端使用 18200
+  port: 18200
   servlet:
     # 应用的访问路径
     context-path: /

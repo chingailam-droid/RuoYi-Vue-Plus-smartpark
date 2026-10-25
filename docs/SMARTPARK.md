@@ -24,12 +24,12 @@ GitHub 默认分支是 `6.X`。根 `pom.xml` 的 `revision` 为 **6.0.0**（Spri
 
 | 项 | 值 |
 | --- | --- |
-| MySQL | `114.67.125.174:13309`，库名 `ry-smartpark` |
+| MySQL | `114.67.125.174:13629`，库名 `ry-smartpark` |
 | Redis | `114.67.125.174:13379`，`database` 为 `11` |
 | MinIO | `114.67.125.174:13090`，bucket `smartpark` |
-| 本地后端 | `18080` |
+| 本地后端 | `18200` |
 
-本地 `dev` / `prod` 与 Docker Compose 已改到同一库名、Redis 索引和后端端口。Nginx 监听 80，上游为 `18080` 与 `18081`。
+本地 `dev` / `prod` 与 Docker Compose 已改到同一库名、Redis 索引和后端端口。Nginx 监听 80，上游为 `18200` 与 `18201`。
 
 ## 演示账号
 
